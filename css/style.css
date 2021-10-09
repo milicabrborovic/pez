@@ -1,0 +1,356 @@
+/* start generalni opisi*****************************************/
+@font-face {
+    font-family: "ProximaNova-Black";
+    src: url(../Font/ProximaNova-Black.otf);
+}
+html{
+    scroll-behavior: smooth;
+    font-family: "ProximaNova-Black";
+}
+a{
+    text-decoration: none;
+}
+/* end generalni opisi******************************************/
+
+/* start header******************************************/
+.navbar{
+    padding: 20px 30px;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-collapse .navbar-nav .nav-link {
+    color:#005baa;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 10px 25px;
+}
+.navbar-collapse .navbar-nav .nav-link:hover{
+    color:rgb(4, 133, 68);
+}
+.navbar-nav a img{
+    height: 60px;
+    width: 60px;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/menu.png);
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+/* end header******************************************/
+
+/* start sekcija naslovna *********************************/
+#naslovna{
+    background: url(../images/main-header-bg.jpg);
+    
+}
+
+.blue {
+    background: #adcdec;
+    clip-path: polygon(100% 0px, 100% 100%, 0px 100%, 0px 55%);
+    position: absolute;
+    left: 0; 
+    width: 100%;
+    height: 1080px;
+    z-index: 1;
+}
+.bubble{
+    z-index: 2;
+}
+/* end sekcija naslovna *********************************/
+
+/* end sekcija register*********************************/
+#register{
+    background-color: #adcdec;
+}
+.racun{
+    z-index: 999;
+}
+.fiskalni{
+    z-index: 999;
+}
+h1{
+    font-size: 90px;
+    color:#005baa;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.forma{
+    z-index: 1;
+}
+.registruj label, #logovanje{
+    color:#005baa;
+    font-weight: 800;
+    margin: 15px 0;
+}
+.forma input[type="text"]{
+    width: 100%;
+    height: 80px;
+}
+.registruj input[type="checkbox"]{
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+.forma input[type="submit"]{
+    width: 100%;
+    height: 80px;
+    background-color: #005baa;
+    color:#fff;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.forma input[type="submit"]:hover{
+    background-color: rgb(4, 133, 68);
+}
+.forma p{
+    font-size: 22px;
+    color:red;
+    font-weight: 800;
+}
+.forma label{
+    color:#005baa;
+    font-weight: 800;
+    font-size: 25px;
+}
+/* end sekcija register *********************************/
+
+/*start sekcija pravila **********************************/
+#pravila{
+    background: #005baa;
+    padding: 190px 0;
+}
+#pravila h1{
+    color:#fff;
+}
+/* end sekcija pravila ***********************************/
+
+/*start sekcija nagrade **********************************/
+#nagrade{
+    background: #adcdec;
+    padding: 160px 0;
+}
+#nagrade h2{
+    color:#005baa;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+/*end sekcija nagrade **********************************/
+
+/* start footer ******************************************/
+#footer a i{
+    font-size: 50px;
+    color:#fff;
+    background: #005baa;
+    padding: 0 7px;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    margin: 0 7px;
+}
+#footer{
+    padding: 10px 0;
+}
+/* end footer ******************************************/
+
+/* start login forma **********************************************************/
+#logovanje{
+    width: 35%;
+    background-color: #eee;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: absolute;
+    display: none;
+    top:300%;
+    left: 50%;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.registruj{
+    width: 35%;
+    top:0%;
+    background-color: #eee;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: none;
+    z-index: 99999;
+}
+
+#logovanje  input:not([type="checkbox"]), .registruj input:not([type="checkbox"]){
+    width: 100%;
+    margin-bottom: 20px;
+    height: 60px;
+}
+
+.registruj label{
+    display: block;
+}
+#logovanje h2, .registruj h2{
+    color:#005baa;
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+#logovanje input[type="checkbox"]{
+    width: 10px;
+    height: 10px;
+}
+#logovanje label, .registruj p{
+    color:#005baa;
+    font-weight: 800;
+    font-size: 15px;
+}
+#logovanje button[type="submit"], .registruj button[type="submit"]{
+    width: 40%;
+    background-color: #005baa;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    padding:10px 0;
+    border:none;
+    margin: 0 auto;
+}
+#logovanje .log{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+#logovanje .log p a, .registruj .back{
+    display: block;
+    background-color: #005baa;;
+    text-align: center;
+    width: 200px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 15px;
+    padding:10px 0;
+}
+#logovanje .log .bom a{
+    background-color: #5097d4;
+    
+}
+#logovanje button:hover{
+    background-color: rgb(4, 133, 68);
+}
+#logovanje a i, .registruj a i{
+    position: absolute;
+    display: block;
+    right: 5%;
+    top: 5%;
+    font-size: 25px;
+    color:rgb(102, 100, 100)
+}
+
+#popup {
+    visibility: hidden; 
+    background-color: red; 
+    position: absolute;
+    top: 10px;
+    z-index: 100; 
+    height: 100px;
+    width: 300px
+}
+
+
+/* end login forma********************************************************** */
+
+/* start @media *****************************************************************************************************************@media */
+@media screen and (max-width: 1500px){
+    .blue {
+        clip-path: polygon(100% 0px, 100% 100%, 0px 100%, 0px 30%);
+    }  
+    #logovanje, .registruj{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 990px){
+     .navbar-brand img{
+        width: 90px;
+        height: auto;
+     }
+     .navbar-nav img{
+        height: 50px;
+        width: 50px;
+    }
+    .navbar-collapse .navbar-nav .nav-link{
+        padding: 10px 0;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .forma input{
+        width: 100%;
+    }
+    #logovanje, .registruj{
+        width: 60%;
+        top:50%;
+    }
+   
+}
+
+@media screen and (max-width: 768px){
+    .blue {
+        height: 400px;
+        clip-path: polygon(100% 0px, 100% 100%, 0px 100%, 0px 40%);
+    }  
+    h1{
+        font-size: 40px;
+    }
+    #footer{
+        text-align: center;
+    }
+    #logovanje, .registruj{
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width: 450px){
+    .blue {
+        height: 400px;
+        clip-path: polygon(100% 0px, 100% 100%, 0px 100%, 0px 35%);
+    }  
+    #logovanje .log{
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1400px){
+    #register .container{
+        max-width: 1000px;
+    }
+}
